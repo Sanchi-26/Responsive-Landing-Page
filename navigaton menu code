@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+    <style>
+        /* Basic styling for the body */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling for the navigation menu */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        /* Menu items styling */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 8px 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hover effect */
+        nav ul li a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        /* Example content */
+        .content {
+            margin-top: 60px;
+            padding: 20px;
+        }
+
+        .content h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation menu -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Example content -->
+    <div class="content" id="home">
+        <h1>Home</h1>
+        <p>This is the home section.</p>
+    </div>
+
+    <div class="content" id="about">
+        <h1>About</h1>
+        <p>This is the about section.</p>
+    </div>
+
+    <div class="content" id="services">
+        <h1>Services</h1>
+        <p>This is the services section.</p>
+    </div>
+
+    <div class="content" id="contact">
+        <h1>Contact</h1>
+        <p>This is the contact section.</p>
+    </div>
+
+    <script>
+        // JavaScript to add more interactivity if needed
+        // For now, this is kept minimal and could be expanded for additional features
+    </script>
+
+</body>
+</html>
